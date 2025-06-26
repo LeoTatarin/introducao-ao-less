@@ -49,6 +49,8 @@ header{
         display: block;
         margin: 0 auto 24px;
         border-radius: 50%;
+        max-width: 120px;
+        max-height: 120px;
     }
 }
 
@@ -67,6 +69,11 @@ header{
     &-description {
         font-size: 14px;
         opacity: .7;
+        a {
+            font-weight: bold;
+            opacity: 0.9;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -104,9 +111,24 @@ header{
             transition: all ease .5s;
 
             &:hover {
-                color: #colors[buttonColor];
+                color: #colors[buttonHoverColor];
                 background-color: transparent;
             }
+        }
+    }
+}
+
+.botao-whats {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    a {
+        text-decoration: none;
+        img {
+            transition: all ease 0.3s;
+        }
+        img:hover {
+            transform: scale(1.3);
         }
     }
 }
