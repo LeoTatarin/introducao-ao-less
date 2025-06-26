@@ -8,7 +8,7 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-color: #30336b;
+  background-color: #2f3640;
   color: #f5f6fa;
 }
 li {
@@ -40,6 +40,8 @@ header .profile-avatar {
   display: block;
   margin: 0 auto 24px;
   border-radius: 50%;
+  max-width: 120px;
+  max-height: 120px;
 }
 .profile-bio {
   text-align: center;
@@ -55,6 +57,11 @@ header .profile-avatar {
 .profile-bio-description {
   font-size: 14px;
   opacity: 0.7;
+}
+.profile-bio-description a {
+  font-weight: bold;
+  opacity: 0.9;
+  text-decoration: underline;
 }
 .social-links {
   display: flex;
@@ -74,7 +81,7 @@ header .profile-avatar {
 }
 .projects-list-item a {
   text-decoration: none;
-  background-color: #95afc0;
+  background-color: #44bd32;
   display: block;
   padding: 16px 20px;
   margin-bottom: 16px;
@@ -82,10 +89,24 @@ header .profile-avatar {
   color: #f5f6fa;
   font-weight: bold;
   border-radius: 30px;
-  border: 2px solid #95afc0;
+  border: 2px solid #44bd32;
   transition: all ease 0.5s;
 }
 .projects-list-item a:hover {
-  color: #95afc0;
+  color: #4cd137;
   background-color: transparent;
+}
+.botao-whats {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+.botao-whats a {
+  text-decoration: none;
+}
+.botao-whats a img {
+  transition: all ease 0.3s;
+}
+.botao-whats a img:hover {
+  transform: scale(1.3);
 }
